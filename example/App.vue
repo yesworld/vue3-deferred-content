@@ -1,19 +1,17 @@
 <template>
   <h1>Test {{param}}</h1>
+  <deferred></deferred>
 </template>
 
 <script>
-import { reactive } from 'vue'
-export default {
-  name: 'App',
-  setup() {
-    const param = reactive('vita')
+import { defineComponent } from "@vue/runtime-core";
 
-    return {
-      param
-    }
-  }
-}
+export default defineComponent({
+  name: 'App',
+  data:() => ({
+    param: 'test'
+  }),
+})
 </script>
 
 <style>

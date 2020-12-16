@@ -4,12 +4,11 @@
   "description": "",
   "main": "./dist/vue3-deferred-content.umd.min.js",
   "scripts": {
-    "dev": "tsc --watch && echo \"TEMP: DELETE IT\"",
     "demo:dev": "vite"
   },
   "keywords": [
-    "Intersection",
-    "Observer",
+    "IntersectionObserver",
+    "intersect",
     "vue3",
     "vue",
     "image",

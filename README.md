@@ -43,3 +43,4 @@ app.mount('#app')
 
 ## 📄 TODO
 - [ ] rollup
+- [ ] coveralls
