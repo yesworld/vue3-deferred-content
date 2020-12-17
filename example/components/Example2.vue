@@ -1,17 +1,17 @@
 <template>
   <section>
-    <h2>Example 1</h2>
+    <h2>Example 2</h2>
     <b>status: {{status}}</b>
-    <p>Standard example with callbacks.</p>
+    <p>Called once after first enter</p>
 
     <div class="example">
       <observer-content
+        :once="true"
         @enter="enterElement"
         @leave="leaveElement"
         @change="changeIntersect"
-        @disconnect="disconnect"
       >
-        <img :class="{hide: !display}" src="http://placekitten.com/200/140" width="200" height="140" alt="kitten">
+        <img :class="{hide: !display}" src="http://placekitten.com/g/200/140" width="200" height="140" alt="kitten 2">
         <p>Number of changes: {{changeCount}}</p>
       </observer-content>
     </div>
@@ -22,7 +22,7 @@
 import { defineComponent } from "@vue/runtime-core";
 
 export default defineComponent({
-  name: 'Example1',
+  name: 'Example2',
   data:() => ({
     changeCount: 0,
     status: '🙈 Leave',
@@ -33,22 +33,17 @@ export default defineComponent({
     enterElement(target: Element) {
       this.status = '🐵 Enter'
       this.display = true
-      // console.log(this.status, target)
+      console.log(this.status, target)
     },
     leaveElement(target: Element) {
       this.status = '🙈 Leave'
       this.display = false
-      // console.log(this.status, target)
+      console.log(this.status, target)
     },
     changeIntersect(target: Element) {
       this.changeCount++
-      // console.log('Change', target)
-    },
-    disconnect() {
-      // console.log('Disconnect')
+      console.log('Change', target)
     },
   },
 })
 </script>
-
-<style lang="scss"></style>

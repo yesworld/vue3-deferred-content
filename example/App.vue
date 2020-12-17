@@ -9,15 +9,25 @@
   </header>
 
   <Example1/>
+  <Example2/>
+  <Example3/>
+
+  <Footer/>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "@vue/runtime-core";
 import Example1 from "./components/Example1.vue"
+import Example2 from "./components/Example2.vue"
+import Example3 from "./components/Example3.vue"
+import Footer from "./components/Footer.vue"
 
 export default defineComponent({
   components: {
     Example1,
+    Example2,
+    Example3,
+    Footer,
   },
   name: 'App',
   data:() => ({

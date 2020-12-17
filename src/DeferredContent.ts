@@ -16,7 +16,7 @@ export default defineComponent({
   }),
 
   props: {
-    hideContent: {
+    autoHide: {
       type: Boolean,
       default: false,
     },
@@ -29,7 +29,7 @@ export default defineComponent({
       default: 0,
     },
     root: {
-      type: Object,
+      type: Object, // TODO: test
       default: null,
     },
     rootMargin: {
@@ -40,7 +40,7 @@ export default defineComponent({
 
   computed: {
     hidden(): boolean {
-      return this.hideContent ? this.loaded : true
+      return this.autoHide ? this.loaded : true
     }
   },
 
@@ -67,9 +67,7 @@ export default defineComponent({
     onElementObserved(entries: IntersectionObserverEntry[]) {
       entries.forEach(({ target, isIntersecting }) => {
 
-        this.$emit('change', target)
-
-        if (this.hideContent) {
+        if (this.autoHide) {
           this.loaded = isIntersecting
         }
 
@@ -82,6 +80,8 @@ export default defineComponent({
         } else {
           this.$emit('leave', target)
         }
+
+        this.$emit('change', target)
       })
     },
   },

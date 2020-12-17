@@ -78,6 +78,15 @@ section {
   }
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00000075;
+  border-top: 1px solid #ccc;
+  //background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
 .placeholder {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -85,6 +94,10 @@ section {
   background: #fff;
   -webkit-box-shadow: -10px 0px 13px -7px #353535, 10px 0px 13px -7px #353535, 0px 0px 22px 16px rgba(183,183,183,0);
   box-shadow: -10px 0px 13px -7px #353535, 10px 0px 13px -7px #353535, 0px 0px 22px 16px rgba(183,183,183,0);
+}
+
+.hide {
+  visibility: hidden;
 }
 
 @-webkit-keyframes pulse {
