@@ -1,21 +1,31 @@
 <template>
-  <h1>Test {{param}}</h1>
-  <deferred></deferred>
+  <header>
+    <div class="title">
+      <h1>Demo {{name}}</h1>
+
+      <span>Scroll down</span>
+      <i class="cross"></i>
+    </div>
+  </header>
+
+  <Example1/>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from "@vue/runtime-core";
+import Example1 from "./components/Example1.vue"
 
 export default defineComponent({
+  components: {
+    Example1,
+  },
   name: 'App',
   data:() => ({
-    param: 'test'
+    name: 'vue3-deferred-content',
   }),
+
+  methods: {},
 })
 </script>
 
-<style>
-h1 {
-  text-align: center;
-}
-</style>
+<style lang="scss"></style>
