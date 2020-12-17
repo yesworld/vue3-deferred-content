@@ -42,5 +42,7 @@ app.mount('#app')
 ```
 
 ## 📄 TODO
+- [ ] prettier
 - [ ] rollup
 - [ ] coveralls
+- [ ] placeholder?
