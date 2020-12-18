@@ -88,12 +88,17 @@ footer {
 }
 
 .placeholder {
+  max-width: 90%;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 25px;
   background: #fff;
   -webkit-box-shadow: -10px 0px 13px -7px #353535, 10px 0px 13px -7px #353535, 0px 0px 22px 16px rgba(183,183,183,0);
   box-shadow: -10px 0px 13px -7px #353535, 10px 0px 13px -7px #353535, 0px 0px 22px 16px rgba(183,183,183,0);
+
+  img {
+    width: 100%;
+  }
 }
 
 .hide {

@@ -9,7 +9,7 @@
       >
         <transition name="fade" :appear="true">
           <div>
-            <img src="https://placekitten.com/400/300" width="400" height="300" alt="kitten 4">
+            <img src="https://placekitten.com/400/300" alt="kitten 4">
           </div>
         </transition>
       </observer-content>
@@ -26,13 +26,15 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.8s ease;
-}
+.example4 {
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.8s ease;
+  }
 
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
 }
 </style>
