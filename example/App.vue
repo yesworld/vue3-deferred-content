@@ -13,6 +13,7 @@
   <Example3/>
   <Example4/>
   <Example5/>
+  <Example6/>
 
   <Footer/>
 </template>
@@ -24,6 +25,7 @@ import Example2 from "./components/Example2.vue"
 import Example3 from "./components/Example3.vue"
 import Example4 from "./components/Example4.vue"
 import Example5 from "./components/Example5.vue"
+import Example6 from "./components/Example6.vue"
 import Footer from "./components/Footer.vue"
 
 export default defineComponent({
@@ -33,6 +35,7 @@ export default defineComponent({
     Example3,
     Example4,
     Example5,
+    Example6,
     Footer,
   },
   name: 'App',

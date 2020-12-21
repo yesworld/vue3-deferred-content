@@ -1,8 +1,10 @@
 <template>
   <section>
-    <h2>Example 2</h2>
-    <b>status: {{status}}</b>
-    <p>Called once after first enter</p>
+    <div>
+      <h2>Example 2</h2>
+      <b>status: {{status}}</b>
+      <p>Called once after first enter</p>
+    </div>
 
     <div class="example">
       <observer-content
@@ -11,10 +13,12 @@
         @leave="leaveElement"
         @change="changeIntersect"
       >
-        <img :class="{hide: !display}" src="http://placekitten.com/g/200/140" width="200" height="140" alt="kitten 2">
+        <img :class="{hide: !display}" src="http://placekitten.com/g/361/281" alt="kitten 2">
         <p>Number of changes: {{changeCount}}</p>
       </observer-content>
     </div>
+
+    <div></div>
   </section>
 </template>
 

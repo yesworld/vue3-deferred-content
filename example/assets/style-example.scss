@@ -59,7 +59,11 @@ header {
 }
 
 section {
-  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+
   text-align: center;
   border-top: 1px solid #ccc;
   min-height: 100vh;
@@ -69,12 +73,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
   }
 }
 

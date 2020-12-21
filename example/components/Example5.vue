@@ -1,7 +1,9 @@
 <template>
   <section class="example5">
-    <h2>Example 5</h2>
-    <p>Lazy load image and Transition group</p>
+    <div>
+      <h2>Example 5</h2>
+      <p>Lazy load image and Transition group</p>
+    </div>
 
     <div class="example">
       <observer-content
@@ -14,6 +16,8 @@
         </transition-group>
       </observer-content>
     </div>
+
+    <div></div>
   </section>
 </template>
 
@@ -24,9 +28,9 @@ export default defineComponent({
   name: 'Example5',
   data:() => ({
     items: [
-      'https://placekitten.com/400/303',
-      'https://placekitten.com/400/301',
-      'https://placekitten.com/400/302',
+      'https://placekitten.com/360/280',
+      'https://placekitten.com/361/281',
+      'https://placekitten.com/362/282',
     ]
   })
 })

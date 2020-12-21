@@ -1,8 +1,10 @@
 <template>
   <section>
-    <h2>Example 1</h2>
-    <b>status: {{status}}</b>
-    <p>Standard example with callbacks.</p>
+    <div>
+      <h2>Example 1</h2>
+      <b>status: {{status}}</b>
+      <p>Standard example with callbacks.</p>
+    </div>
 
     <div class="example">
       <observer-content
@@ -11,10 +13,12 @@
         @change="changeIntersect"
         @disconnect="disconnect"
       >
-        <img :class="{hide: !display}" src="http://placekitten.com/200/140" width="200" height="140" alt="kitten">
+        <img :class="{hide: !display}" src="http://placekitten.com/360/280" alt="kitten">
         <p>Number of changes: {{changeCount}}</p>
       </observer-content>
     </div>
+
+    <div></div>
   </section>
 </template>
 
