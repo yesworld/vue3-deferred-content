@@ -37,16 +37,16 @@ export default defineComponent({
     enterElement(target: Element) {
       this.status = '🐵 Enter'
       this.display = true
-      console.log(this.status, target)
+      // console.log(this.status, target)
     },
     leaveElement(target: Element) {
       this.status = '🙈 Leave'
       this.display = false
-      console.log(this.status, target)
+      // console.log(this.status, target)
     },
     changeIntersect(target: Element) {
       this.changeCount++
-      console.log('Change', target)
+      // console.log('Change', target)
     },
   },
 })

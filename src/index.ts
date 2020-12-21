@@ -12,6 +12,18 @@ export default {
 
     const name = typeof settings.name === 'string' ? settings.name : DeferredContent.name
 
+    if (typeof settings.threshold !== 'undefined') {
+      DeferredContent.props.threshold.default = () => {
+        return settings.threshold
+      }
+    }
+
+    if (typeof settings.rootMargin !== 'undefined') {
+      DeferredContent.props.rootMargin.default = () => {
+        return settings.rootMargin
+      }
+    }
+
     Vue.component(name, DeferredContent)
   }
 }

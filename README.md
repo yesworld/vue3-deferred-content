@@ -36,7 +36,9 @@ import VueDeferredContent from 'vue3-deferred-content'
 
 const app = createApp(App)
 app.use(VueDeferredContent, {
-  name: ''
+  name: '',       // string
+  threshold: '',  // number | number[]
+  rootMargin: '', // string
 })
 app.mount('#app')
 ```
