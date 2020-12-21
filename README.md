@@ -2,7 +2,7 @@
 
 
 ## 🚀 Features
-- ⚡ **0 dependencies:** No worry about your bundle size
+- 📦 **0 dependencies:** No worry about your bundle size
 - 🦾 **Type Strong:** Written in Typescript
 - 💪 **Small Size:** Only 0kb
 - 🌎 **Browser support:** Use it through CDN
@@ -36,13 +36,11 @@ import VueDeferredContent from 'vue3-deferred-content'
 
 const app = createApp(App)
 app.use(VueDeferredContent, {
-  // options...
+  name: ''
 })
 app.mount('#app')
 ```
 
 ## 📄 TODO
-- [ ] prettier
 - [ ] rollup
 - [ ] coveralls
-- [ ] placeholder?

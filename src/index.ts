@@ -12,8 +12,6 @@ export default {
 
     const name = typeof settings.name === 'string' ? settings.name : DeferredContent.name
 
-    console.log({settings})
-
     Vue.component(name, DeferredContent)
   }
 }

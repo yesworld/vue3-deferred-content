@@ -35,7 +35,7 @@ export default defineComponent({
 .example6 {
   .fade-enter-active,
   .fade-leave-active {
-    transition: opacity 1s ease;
+    transition: opacity 15s ease;
   }
 
   .fade-enter-from,

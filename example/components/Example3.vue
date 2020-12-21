@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="example3">
     <div>
       <h2>Example 3</h2>
       <p>Calling the module without callbacks. Lazy load image</p>

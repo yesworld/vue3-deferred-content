@@ -13,6 +13,14 @@ body {
   background-repeat: no-repeat;
   //background-attachment: fixed;
 
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
   h1, h2 {
     text-shadow: 2px 3px 0 #898999;
     color: #fff;
@@ -68,6 +76,10 @@ section {
   border-top: 1px solid #ccc;
   min-height: 100vh;
   padding: 20px;
+
+  > div > b {
+    font-size: 25px;
+  }
 
   .example {
     display: flex;

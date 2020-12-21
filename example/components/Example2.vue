@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="example2">
     <div>
       <h2>Example 2</h2>
       <b>status: {{status}}</b>

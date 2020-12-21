@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="example1">
     <div>
       <h2>Example 1</h2>
       <b>status: {{status}}</b>
@@ -18,7 +18,9 @@
       </observer-content>
     </div>
 
-    <div></div>
+    <div>
+      <b>status: {{status}}</b>
+    </div>
   </section>
 </template>
 

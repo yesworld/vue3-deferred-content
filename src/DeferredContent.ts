@@ -29,7 +29,7 @@ export default defineComponent({
       default: 0,
     },
     root: {
-      type: Object, // TODO: test
+      type: Object,
       default: null,
     },
     rootMargin: {
@@ -45,7 +45,7 @@ export default defineComponent({
   },
 
   mounted() {
-    const option = {
+    const option: IntersectionObserverInit = {
       threshold: this.threshold,
       rootMargin: this.rootMargin,
     }
@@ -64,7 +64,7 @@ export default defineComponent({
   },
 
   methods: {
-    onElementObserved(entries: IntersectionObserverEntry[]) {
+    onElementObserved(entries: IntersectionObserverEntry[]): void {
       entries.forEach(({ target, isIntersecting }) => {
 
         if (this.autoHide) {
@@ -85,5 +85,4 @@ export default defineComponent({
       })
     },
   },
-
 })
