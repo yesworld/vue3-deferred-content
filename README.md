@@ -2,9 +2,9 @@
 
 
 ## 🚀 Features
-- 📦 **0 dependencies:** No worry about your bundle size
+- 🔗 **0 dependencies:** No worry about your bundle size
 - 🦾 **Type Strong:** Written in Typescript
-- 💪 **Small Size:** Only 0kb
+- 📦 **Size:** Only 27kb
 - 🌎 **Browser support:** Use it through CDN
 
 ## 📎 Installation
@@ -44,5 +44,4 @@ app.mount('#app')
 ```
 
 ## 📄 TODO
-- [ ] rollup
 - [ ] coveralls
