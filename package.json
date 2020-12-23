@@ -1,6 +1,6 @@
 {
   "name": "vue3-deferred-content",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Vue3 component to detect when HTML element or component is becoming visible/hidden on the page.",
   "author": "Akhmedshin Damir <a.yesworld@gmail.com>",
   "scripts": {
@@ -9,6 +9,13 @@
   },
   "license": "MIT",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yesworld/vue3-deferred-content"
+  },
+  "bugs": {
+    "url": "https://github.com/yesworld/vue3-deferred-content/issues"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@rollup/plugin-babel": "^5.2.2",
