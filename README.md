@@ -1,5 +1,11 @@
 # vue3-deferred-content
 
+A Vue3 component to detect when HTML element or component is becoming visible/hidden on the page.
+
+[![](https://img.shields.io/npm/v/vue3-deferred-content?color=success&style=flat-square)](https://www.npmjs.com/package/vue3-deferred-content)
+
+[comment]: <> ([![]&#40;https://img.shields.io/npm/dw/vue3-deferred-content?color=success&style=flat-square&#41;]&#40;https://www.npmjs.com/package/vue3-deferred-content&#41;)
+
 
 ## 🚀 Features
 - 🔗 **0 dependencies:** No worry about your bundle size
@@ -14,17 +20,6 @@ $ npm i vue3-deferred-content
 $ yarn add vue3-deferred-content
 ```
 
-## 🌎 CDN
-
-CDN: https://unpkg.com/vue3-deferred-content/dist/vue3-deferred-content.min.js
-```html
-<script src="https://unpkg.com/vue3-deferred-content/dist/vue3-deferred-content.min.js"></script>
-<script>
-  Vue.createApp(App).use(vueDeferredContent)
-  ...
-</script>
-```
-
 ## 👽 Usage
 
 main.js:
@@ -35,13 +30,11 @@ import App from './App.vue'
 import VueDeferredContent from 'vue3-deferred-content'
 
 const app = createApp(App)
-app.use(VueDeferredContent, {
+const options = {
   name: '',       // string
   threshold: '',  // number | number[]
   rootMargin: '', // string
-})
+}
+app.use(VueDeferredContent, options)
 app.mount('#app')
 ```
-
-## 📄 TODO
-- [ ] coveralls

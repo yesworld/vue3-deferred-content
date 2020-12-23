@@ -10,17 +10,19 @@ export default {
       return
     }
 
-    const name = typeof settings.name === 'string' ? settings.name : DeferredContent.name
+    let name = DeferredContent.name
 
-    if (typeof settings.threshold !== 'undefined') {
-      DeferredContent.props.threshold.default = () => {
-        return settings.threshold
+    if (settings) {
+      if (typeof settings.name === 'string') {
+        name = settings.name
       }
-    }
 
-    if (typeof settings.rootMargin !== 'undefined') {
-      DeferredContent.props.rootMargin.default = () => {
-        return settings.rootMargin
+      if (typeof settings.threshold !== 'undefined') {
+        DeferredContent.props.threshold.default = settings.threshold as any
+      }
+
+      if (typeof settings.rootMargin !== 'undefined') {
+        DeferredContent.props.rootMargin.default = settings.rootMargin
       }
     }
 

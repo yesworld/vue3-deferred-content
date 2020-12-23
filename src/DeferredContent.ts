@@ -1,14 +1,17 @@
-import { defineComponent } from 'vue/dist/vue.esm-bundler'
+import { h } from 'vue'
 
-export default defineComponent({
+export default {
   emits: ['leave', 'enter', 'change', 'disconnect'],
   name: 'deferred',
 
-  template: `
-    <div class="placeholder">
-      <slot v-if="hidden"></slot>
-    </div>
-  `,
+  render () {
+    return h('div', {
+        class: 'placeholder'
+      },
+      // this.$slots.default && this.$slots.default()
+      this.hidden ? this.$slots : null
+    )
+  },
 
   data: () => ({
     observer: null,
@@ -85,4 +88,4 @@ export default defineComponent({
       })
     },
   },
-})
+}
