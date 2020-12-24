@@ -1,6 +1,6 @@
 {
   "name": "vue3-deferred-content",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Vue3 component to detect when HTML element or component is becoming visible/hidden on the page.",
   "author": "Akhmedshin Damir <a.yesworld@gmail.com>",
   "scripts": {

@@ -44,7 +44,6 @@ export default defineComponent({
     justify-content: space-around;
   }
 
-
   .list-item {
     width: 30%;
   }
