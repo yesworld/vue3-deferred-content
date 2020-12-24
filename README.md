@@ -1,17 +1,19 @@
 # vue3-deferred-content
 
-A Vue3 component to detect when HTML element or component is becoming visible/hidden on the page.
+A Vue3 component to detect when HTML element or component is becoming visible/hidden on the page. The intersection can be observed once or listened by callback.
 
 [![](https://img.shields.io/npm/v/vue3-deferred-content?color=success&style=flat-square)](https://www.npmjs.com/package/vue3-deferred-content)
 ![](https://img.shields.io/npm/l/vue3-deferred-content?color=success&style=flat-square)
-![](https://img.shields.io/github/repo-size/yesworld/vue3-deferred-content?style=flat-square)
-![](https://img.shields.io/bundlephobia/min/vue3-deferred-content?style=flat-square)
+[![](https://img.shields.io/github/repo-size/yesworld/vue3-deferred-content?style=flat-square)](https://bundlephobia.com/result?p=vue3-deferred-content)
+[![](https://img.shields.io/bundlephobia/min/vue3-deferred-content?style=flat-square)](https://bundlephobia.com/result?p=vue3-deferred-content)
+![](https://img.shields.io/npm/dw/vue3-deferred-content?color=blue&style=flat-square)
+[![](https://img.shields.io/github/issues/yesworld/vue3-deferred-content?style=flat-square&color=yellow)](https://github.com/yesworld/vue3-deferred-content/issues)
+[![](https://img.shields.io/github/issues-pr/yesworld/vue3-deferred-content?style=flat-square&color=yellow)](https://github.com/yesworld/vue3-deferred-content/pulls)
+[![](https://shields.io/badge/version-3.0-green?logo=Vue.js&style=flat-square)](https://v3.vuejs.org/)
+[![](https://img.shields.io/github/stars/yesworld/vue3-deferred-content?style=social)](https://github.com/yesworld/vue3-deferred-content)
 
 [comment]: <> (![]&#40;https://img.shields.io/badge/buy%20me%20a%20coffee-donate-blue.svg?color=orange&style=flat-square&#41;)
-
-[comment]: <> (![]&#40;https://img.shields.io/npm/dw/vue3-deferred-content?color=success&style=flat-square&#41;)
-[comment]: <> ([![]&#40;https://img.shields.io/npm/dw/vue3-deferred-content?color=success&style=flat-square&#41;]&#40;https://www.npmjs.com/package/vue3-deferred-content&#41;)
-
+[comment]: <> ([![]&#40;https://img.shields.io/github/stars/yesworld/vue3-deferred-content?color=blue&style=flat-square&#41;]&#40;https://github.com/yesworld/vue3-deferred-content&#41;)
 
 ## 🚀 Features
 - 🔗 **0 dependencies:** No worry about your bundle size
@@ -20,14 +22,14 @@ A Vue3 component to detect when HTML element or component is becoming visible/hi
 
 [comment]: <> (- 🌎 **Browser support:** Use it through CDN)
 
-## 📎 Installation
+## 📦 Installation
 ```sh
 $ npm i vue3-deferred-content
 # or
 $ yarn add vue3-deferred-content
 ```
 
-## 👽 Usage
+## 📎 How to use?
 
 main.js:
 
@@ -38,15 +40,17 @@ import VueDeferredContent from 'vue3-deferred-content'
 
 const app = createApp(App)
 const options = {
-  name: '',       // string
-  threshold: '',  // number | number[]
-  rootMargin: '', // string
-}
+  name: 'observerContent',  // by default: deferred
+  
+  // by default for all components
+  rootMargin: '0px',        // string
+  threshold: 0,             // number | number[]
+}     
 app.use(VueDeferredContent, options)
 app.mount('#app')
 ```
 
-## Examples - How to use?
+## Examples
 
 1. Standard example with callbacks.
 ```html
