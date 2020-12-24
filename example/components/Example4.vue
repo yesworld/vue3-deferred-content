@@ -6,9 +6,7 @@
     </div>
 
     <div class="example">
-      <observer-content
-        :auto-hide="true"
-      >
+      <observer-content>
         <transition name="fade" :appear="true">
           <div>
             <img src="https://placekitten.com/400/300" alt="kitten 4">

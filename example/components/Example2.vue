@@ -9,6 +9,7 @@
     <div class="example">
       <observer-content
         :once="true"
+        :auto-hide="false"
         @enter="enterElement"
         @leave="leaveElement"
         @change="changeIntersect"

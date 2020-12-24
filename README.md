@@ -1,6 +1,6 @@
 # vue3-deferred-content
 
-A Vue3 component to detect when HTML element or component is becoming visible/hidden on the page. The intersection can be observed once or listened by callback.
+A Vue3 component to detect when HTML element or lazy component is becoming visible/hidden on the page. The intersection can be observed once or listened by callback.
 
 [![](https://img.shields.io/npm/v/vue3-deferred-content?color=success&style=flat-square)](https://www.npmjs.com/package/vue3-deferred-content)
 ![](https://img.shields.io/npm/l/vue3-deferred-content?color=success&style=flat-square)
@@ -17,7 +17,7 @@ A Vue3 component to detect when HTML element or component is becoming visible/hi
 
 ## 🚀 Features
 - 🔗 **0 dependencies:** No worry about your bundle size
-- 🦾 **Type Strong:** Written in Typescript
+- ✊ **Type Strong:** Written in Typescript
 - 📦 **Size:** ~27kb
 
 [comment]: <> (- 🌎 **Browser support:** Use it through CDN)
@@ -40,7 +40,7 @@ import VueDeferredContent from 'vue3-deferred-content'
 
 const app = createApp(App)
 const options = {
-  name: 'observerContent',  // by default: deferred
+  name: 'lazyContent',  // by default: deferred
   
   // by default for all components
   rootMargin: '0px',        // string
@@ -55,7 +55,8 @@ app.mount('#app')
 1. Standard example with callbacks.
 ```html
 <b>status: {{status}}</b>
-<observer-content
+<lazy-content
+    :auto-hide="false"
     @enter="enterElement"
     @leave="leaveElement"
     @change="changeIntersect"
@@ -63,7 +64,7 @@ app.mount('#app')
 >
     <img src="http://placekitten.com/360/280" alt="kitten">
     <p>Number of changes: {{changeCount}}</p>
-</observer-content>
+</lazy-content>
 ```
 
 ```js
@@ -95,13 +96,13 @@ export default defineComponent({
 
 2. Called once after first enter.
 ```html
-<observer-content
+<lazy-content
   :once="true"
   @change="changeIntersect"
 >
   <img src="http://placekitten.com/g/361/281" alt="kitten 2">
   <p>Number of changes: {{changeCount}}</p>
-</observer-content>
+</lazy-content>
 ```
 
 ```js
@@ -121,25 +122,21 @@ export default defineComponent({
 
 3. Calling the module without callbacks. Lazy load image.
 ```html
-<observer-content
-  :auto-hide="true"
->
+<lazy-content>
   <img src="https://placekitten.com/362/282" alt="kitten 3">
-</observer-content>
+</lazy-content>
 ```
 
 4. Lazy load image and Transition.
 ```html
-<observer-content
-  :auto-hide="true"
->
+<lazy-content>
   <transition name="fade" :appear="true">
     <!-- This DIV tag is required for this example and I don't know why. :( -->
     <div>
       <img src="https://placekitten.com/400/300" alt="kitten 4">
     </div>
   </transition>
-</observer-content>
+</lazy-content>
 ```
 
 ```css
@@ -156,15 +153,13 @@ export default defineComponent({
 
 5. Lazy load image and Transition group.
 ```html
-<observer-content
-  :auto-hide="true"
->
+<lazy-content>
   <transition-group name="list" :appear="true">
       <span v-for="(item, index) in items" :key="item" class="list-item" :style="`transition-delay: ${index * 250}ms;`">
         <img :src="item" alt="kitten 5">
       </span>
   </transition-group>
-</observer-content>
+</lazy-content>
 ```
 
 ```js
@@ -205,14 +200,13 @@ export default defineComponent({
 
 6. Async Component and Transition.
 ```html
-<observer-content
-  :auto-hide="true"
+<lazy-content
   :once="true"
 >
   <transition name="fade" :appear="true">
     <AsyncComponent/>
   </transition>
-</observer-content>
+</lazy-content>
 ```
 
 ```js

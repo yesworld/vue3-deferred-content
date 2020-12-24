@@ -21,7 +21,7 @@ export default {
   props: {
     autoHide: {
       type: Boolean,
-      default: false,
+      default: true,
     },
     once: {
       type: Boolean,

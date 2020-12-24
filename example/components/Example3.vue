@@ -6,9 +6,7 @@
     </div>
 
     <div class="example">
-      <observer-content
-        :auto-hide="true"
-      >
+      <observer-content>
           <img src="https://placekitten.com/362/282" alt="kitten 3">
       </observer-content>
     </div>

@@ -7,7 +7,6 @@
 
     <div class="example">
       <observer-content
-        :auto-hide="true"
         :once="true"
       >
         <transition name="fade" :appear="true">

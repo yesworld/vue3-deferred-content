@@ -8,6 +8,7 @@
 
     <div class="example">
       <observer-content
+        :auto-hide="false"
         @enter="enterElement"
         @leave="leaveElement"
         @change="changeIntersect"

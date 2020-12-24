@@ -6,9 +6,7 @@
     </div>
 
     <div class="example">
-      <observer-content
-        :auto-hide="true"
-      >
+      <observer-content>
         <transition-group name="list" :appear="true">
           <span v-for="(item, index) in items" :key="item" class="list-item" :style="`transition-delay: ${index * 250}ms;`">
             <img :src="item" alt="kitten 5">
