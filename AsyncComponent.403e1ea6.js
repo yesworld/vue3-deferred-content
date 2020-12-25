@@ -1,0 +1,1 @@
+import{d as t,o as n,c as e}from"./index.af071685.js";var a=t({name:"AsyncComponent"});const o={src:"https://placekitten.com/400/300",alt:"kitten 6"};a.render=function(t,a,r,s,c,i){return n(),e("img",o)};export default a;
