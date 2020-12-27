@@ -1,11 +1,13 @@
 {
   "name": "vue3-deferred-content",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "A Vue3 component to detect when HTML element or lazy component is becoming visible/hidden on the page.",
   "author": "Akhmedshin Damir <a.yesworld@gmail.com>",
   "scripts": {
     "demo:dev": "vite",
-    "build": "rollup -c --environment production"
+    "build": "rollup -c --environment production",
+    "demo:build": "APP_ENV=production vite build --outDir ./dist-example",
+    "demo:deploy": "gh-pages -d dist-example"
   },
   "license": "MIT",
   "private": false,
@@ -16,12 +18,14 @@
   "bugs": {
     "url": "https://github.com/yesworld/vue3-deferred-content/issues"
   },
+  "homepage": "https://yesworld.github.io/vue3-deferred-content/",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@rollup/plugin-babel": "^5.2.2",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.1",
     "@rollup/plugin-typescript": "^8.1.0",
+    "gh-pages": "^3.1.0",
     "rollup": "^2.35.1",
     "rollup-plugin-banner2": "^1.0.2",
     "rollup-plugin-terser": "^7.0.2",

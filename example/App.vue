@@ -2,7 +2,7 @@
   <header>
     <div class="title">
       <h1>Demo {{name}}</h1>
-
+      <h2>A Vue3 component to detect when HTML element or lazy component is becoming visible/hidden on the page. The intersection can be observed once or listened by callback.</h2>
       <span>Scroll down</span>
       <i class="cross"></i>
     </div>

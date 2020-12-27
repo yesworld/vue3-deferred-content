@@ -1,6 +1,6 @@
 # vue3-deferred-content
 
-A Vue3 component to detect when HTML element or lazy component is becoming visible/hidden on the page. The intersection can be observed once or listened by callback.
+A Vue3 component to detect when lazy component or HTML element is becoming visible/hidden on the page. The intersection can be observed once or listened by callback.
 
 [![](https://img.shields.io/npm/v/vue3-deferred-content?color=success&style=flat-square)](https://www.npmjs.com/package/vue3-deferred-content)
 ![](https://img.shields.io/npm/l/vue3-deferred-content?color=success&style=flat-square)
@@ -13,12 +13,13 @@ A Vue3 component to detect when HTML element or lazy component is becoming visib
 [![](https://img.shields.io/github/stars/yesworld/vue3-deferred-content?style=social)](https://github.com/yesworld/vue3-deferred-content)
 
 [comment]: <> (![]&#40;https://img.shields.io/badge/buy%20me%20a%20coffee-donate-blue.svg?color=orange&style=flat-square&#41;)
-[comment]: <> ([![]&#40;https://img.shields.io/github/stars/yesworld/vue3-deferred-content?color=blue&style=flat-square&#41;]&#40;https://github.com/yesworld/vue3-deferred-content&#41;)
 
 ## 🚀 Features
 - 🔗 **0 dependencies:** No worry about your bundle size
 - ✊ **Type Strong:** Written in Typescript
 - 📦 **Size:** ~27kb
+
+[Live demo 🎉](https://yesworld.github.io/vue3-deferred-content/)
 
 [comment]: <> (- 🌎 **Browser support:** Use it through CDN)
 
