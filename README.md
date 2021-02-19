@@ -1,4 +1,4 @@
-# vue3-deferred-content
+# Vue 3 Lazy load image and component / vue3-deferred-content
 
 A Vue3 component to detect when lazy component or HTML element is becoming visible/hidden on the page. The intersection can be observed once or listened by callback.
 
